@@ -1,0 +1,1 @@
+type ReflectBase = { key: string; group: number | string };

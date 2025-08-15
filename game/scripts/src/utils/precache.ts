@@ -7,6 +7,9 @@ export default function Precache(context: CScriptPrecacheContext) {
             // '***.vpcf',
             // 'soundevents/game_sounds_heroes/game_sounds_queenofpain.vsndevts',
             // '***.vmdl',
+            'particles/econ/items/earthshaker/earthshaker_arcana/earthshaker_arcana_aftershock_v2_shockwave.vpcf',
+            'models/items/broodmother/spiderling/ti9_cache_brood_mother_of_thousands_spiderling/ti9_cache_brood_mother_of_thousands_spiderling.vmdl'
+            // 'models/items/chen/chen_infernal_psychic_mount/chen_infernal_psychic_mount.vmdl'
         ],
         context
     );
@@ -68,7 +71,7 @@ function precacheUnits(unitNamesList: string[], context?: CScriptPrecacheContext
         });
     } else {
         unitNamesList.forEach(unitName => {
-            PrecacheUnitByNameAsync(unitName, () => {});
+            PrecacheUnitByNameAsync(unitName, () => { });
         });
     }
 }

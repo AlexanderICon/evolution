@@ -17,7 +17,7 @@ let addon_name: string = 'evolution';
  */
 const encrypt_files: string[] = [
     // 加密所有lua文件
-    '**/*.lua',
+    // '**/*.lua',
     // 不加密这几个必须不加密的
     '!game/scripts/vscripts/lualib_bundle.lua',
     '!game/scripts/vscripts/addon_init.lua',
@@ -79,7 +79,7 @@ function importAddonName() {
         const fileContent = fs.readFileSync(filePath, 'utf8');
         addon_name = fileContent;
         console.log(`使用开发模板时配置的项目名称：${addon_name}`);
-    } catch (e) {}
+    } catch (e) { }
 }
 
 // 同步调用导入函数

@@ -35,12 +35,10 @@ export class GameConfig {
         //     // 设置自定义英雄每个等级所需经验，这里的经验是升级到这一级所需要的*总经验）
         //     1: 0,
         // });
-        game.SetDaynightCycleDisabled(true); // 是否禁用白天黑夜循环
         game.SetDeathOverlayDisabled(true); // 是否禁用死亡遮罩（灰色的遮罩）
-
         // 设置自定义的队伍人数上限
-        GameRules.SetCustomGameTeamMaxPlayers(DotaTeam.GOODGUYS, 3);
-        GameRules.SetCustomGameTeamMaxPlayers(DotaTeam.BADGUYS, 3);
+        GameRules.SetCustomGameTeamMaxPlayers(DotaTeam.GOODGUYS, 1);
+        GameRules.SetCustomGameTeamMaxPlayers(DotaTeam.BADGUYS, 0);
         // for (let team = DotaTeam.CUSTOM_1; team <= DotaTeam.CUSTOM_8; ++team) {
         //     GameRules.SetCustomGameTeamMaxPlayers(team, 1);
         // }

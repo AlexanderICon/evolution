@@ -7,12 +7,10 @@
 {
 	"npc_kv_custom_earthshaker" {
 		"BaseClass" "npc_dota_creature"
-		"Model" "models/heroes/earthshaker/earthshaker.vmdl"
+		"Model" "models/items/broodmother/spiderling/ti9_cache_brood_mother_of_thousands_spiderling/ti9_cache_brood_mother_of_thousands_spiderling.vmdl"
 		"ModelScale" "1"
 		"Creature" {
 			"AttachWearables" {
-				"1" { "ItemDef" "123" }
-				"2" { "ItemDef" "223" }
 			}
 		}
 		"SoundSet" "Hero_EarthShaker"
@@ -26,10 +24,15 @@
 		"Ability6" ""
 		"ConsideredHero" "1"
 		"HealthBarOffset" "200"
+		"MovementSpeed" "300"
+		"MovementTurnRate" "1"
+		"HasAggressiveStance" "1"
+		"AcquisitionRange" "600"
 		"MovementCapabilities" "DOTA_UNIT_CAP_MOVE_GROUND"
+		"AttackCapabilities" "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"ArmorPhysical" "5"
 		"MagicalResistance" "0"
-		"StatusHealth" "500"
+		"StatusHealth" "5000"
 		"StatusHealthRegen" "0"
 		"StatusMana" "100"
 		"StatusManaRegen" "0"
@@ -43,6 +46,8 @@
 		"BoundsHullName" "DOTA_HULL_SIZE_HERO"
 		"RingRadius" "70"
 		"HasInventory" "1"
+		"VisionDaytimeRange" "5000"
+		"VisionNighttimeRange" "6000"
 	}
 
 
